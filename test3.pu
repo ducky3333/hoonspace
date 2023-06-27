@@ -1,0 +1,11 @@
+@startuml
+start
+ :Hello;
+
+ if (friend?) then (yes)
+    :Nice to meet you;
+    else (no)
+    :Who are you?;
+    endif
+end
+@enduml
