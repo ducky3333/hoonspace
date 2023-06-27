@@ -5,8 +5,7 @@
 #define sand_price 6000
 
 void menuList();
-void menuSelection(int coffee_count, int sand_count, int total_count);
-TESTED
+void menuSelection(int coffee_count, int sand_count);
 
 int main(void)
 {
@@ -16,9 +15,8 @@ int main(void)
     printf("Welcome to Coffee shop.\n");
     printf("which do you want?\n");
     menuList();
-    menuSelection(coffee_count, sand_count, total_count);
+    menuSelection(coffee_count, sand_count);
 
-    totalCalculation(coffee_count, sand_count);
     printf("\n\n\n === Processing === \n\n\n");
     printf("Completed !! \n");
 
@@ -51,14 +49,14 @@ void menuSelection(int coffee_count, int sand_count)
         if(menuSelect == 1)
         {
             coffee_count++;
-            printf("anything else?");
+            printf("anything else?\n");
             menuList();
             scanf_s("%d", &menuSelect);
         }
         else if(menuSelect == 2)
         {
             sand_count++;
-            printf("anything else?");
+            printf("anything else?\n");
             menuList();
             scanf_s("%d", &menuSelect);
         }
