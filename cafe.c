@@ -6,6 +6,7 @@
 
 void menuList();
 void menuSelection(int coffee_count, int sand_count, int total_count);
+TESTED
 
 int main(void)
 {
